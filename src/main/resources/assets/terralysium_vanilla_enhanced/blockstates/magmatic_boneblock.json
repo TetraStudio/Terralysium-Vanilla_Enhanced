@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "terralysium_vanilla_enhanced:block/magmatic_boneblock_side",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "terralysium_vanilla_enhanced:block/magmatic_boneblock_top"
+    },
+    "axis=z": {
+      "model": "terralysium_vanilla_enhanced:block/magmatic_boneblock_side",
+      "x": 90
+    }
+  }
+}

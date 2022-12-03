@@ -1,0 +1,11 @@
+{
+  "name": "Jams",
+  "icon": "terralysium_vanilla_enhanced:mango",
+  "category": "terralysium_vanilla_enhanced:ingredients",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "You can cook Fruits or Fruits with Sugar into Jams [See Jam Category]"
+    }
+  ]
+}

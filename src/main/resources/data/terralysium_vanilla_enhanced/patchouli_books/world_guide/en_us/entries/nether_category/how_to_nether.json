@@ -1,0 +1,11 @@
+{
+  "name": "How to enter the Nether",
+  "icon": "minecraft:obsidian",
+  "category": "terralysium_vanilla_enhanced:nether_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "How to enter the Nether Dimension"
+    }
+  ]
+}

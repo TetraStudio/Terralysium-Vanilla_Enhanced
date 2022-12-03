@@ -1,0 +1,11 @@
+{
+  "name": "Hard Sugar",
+  "icon": "terralysium_vanilla_enhanced:mango",
+  "category": "terralysium_vanilla_enhanced:ingredients",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Hard Sugar are forms of sugar which good hardend over different process like [See Fruit Hard Sugar Category]"
+    }
+  ]
+}

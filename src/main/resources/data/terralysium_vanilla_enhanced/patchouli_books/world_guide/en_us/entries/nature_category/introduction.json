@@ -1,0 +1,12 @@
+{
+  "name": "An Introduction",
+  "icon": "minecraft:book",
+  "category": "terralysium_vanilla_enhanced:nature_category",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Welcome to the World of Minecraft. In this book you will learn all relevant information about the world."
+    }
+  ]
+}

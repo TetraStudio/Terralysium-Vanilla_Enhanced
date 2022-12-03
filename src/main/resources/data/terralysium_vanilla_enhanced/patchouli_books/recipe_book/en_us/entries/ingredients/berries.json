@@ -1,0 +1,11 @@
+{
+  "name": "Berries",
+  "icon": "minecraft:sweet_berries",
+  "category": "terralysium_vanilla_enhanced:ingredients",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "In Minecraft you can find a lot of different Berries like Blueberries, Sweet Berries or Raspberry. All this berries are used to create different foods.[See Berries Category]"
+    }
+  ]
+}

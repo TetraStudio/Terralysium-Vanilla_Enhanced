@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terralysium_vanilla_enhanced:tanzanite_block"
+    }
+  ],
+  "result": {
+    "item": "terralysium_vanilla_enhanced:magmatic_bone",
+    "count": 9
+  }
+}

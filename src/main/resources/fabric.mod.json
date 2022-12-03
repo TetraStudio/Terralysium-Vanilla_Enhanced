@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "terralysium_vanilla_enhanced",
+  "version": "${version}",
+
+  "name": "Terralysium: Vanilla Enhanced",
+  "description": "Terralysium: Vanilla Enhanced is a mod of the Terralysium Serie. The Mod offers you a complete new Minecraft experience by adding new vanilla style features.",
+  "authors": [
+    "DragonGod65"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "poisonus_acid_bucket.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.dragongod65.terralysium_vanilla_enhanced.Terralysium_VE"
+    ],
+    "client": [
+      "net.dragongod65.terralysium_vanilla_enhanced.Terralysium_VE_Client"
+    ]
+  },
+  "mixins": [
+    "terralysium_vanilla_enhanced.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

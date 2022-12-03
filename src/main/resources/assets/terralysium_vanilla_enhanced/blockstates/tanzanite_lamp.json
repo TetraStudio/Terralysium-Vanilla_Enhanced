@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "terralysium_vanilla_enhanced:block/tanzanite_lamp_on" },
+    "lit=false": { "model": "terralysium_vanilla_enhanced:block/tanzanite_lamp_off" }
+  }
+}

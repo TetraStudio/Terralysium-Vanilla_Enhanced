@@ -1,0 +1,12 @@
+"multiblock": {
+  "pattern": [
+    ["OOOO"],
+    ["O  O"],
+    ["O  O"],
+    ["O  O"],
+    ["OOOO"]
+  ]
+  "mapping": {
+    "O": "minecraft:obsidian",
+  }
+}

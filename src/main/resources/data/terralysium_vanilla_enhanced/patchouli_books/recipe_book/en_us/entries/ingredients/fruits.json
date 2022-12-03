@@ -1,0 +1,11 @@
+{
+  "name": "Fruits",
+  "icon": "terralysium_vanilla_enhanced:mango",
+  "category": "terralysium_vanilla_enhanced:ingredients",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "In Minecraft you can find a lot of different Fruits like Apples, Pineapples or Mangos. All this fruits are used to create different foods. [See Fruit Category]"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "terralysium_vanilla_enhanced:gem_infusing",
+  "ingredients": [
+    {
+      "item": "terralysium_vanilla_enhanced:raw_tanzanite"
+    }
+  ],
+  "output": {
+    "item": "terralysium_vanilla_enhanced:magmatic_bone"
+  }
+}

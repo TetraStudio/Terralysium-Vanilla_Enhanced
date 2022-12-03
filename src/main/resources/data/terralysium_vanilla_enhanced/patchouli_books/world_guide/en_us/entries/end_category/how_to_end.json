@@ -1,0 +1,13 @@
+{
+  "name": "How to enter the End",
+  "icon": "minecraft:endportal_frame",
+  "category": "terralysium_vanilla_enhanced:end_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "How to enter the End Dimension",
+      "text": "So how to enter the End Dimension. First you need eyes of ender, to locate the stronghold, which has the portal to the End Dimension. The End Dimension can't be entered over a built portal."
+
+    }
+  ]
+}

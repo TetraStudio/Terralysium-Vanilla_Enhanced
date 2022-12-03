@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "terralysium_vanilla_enhanced:item/lotusflower"
+  }
+}

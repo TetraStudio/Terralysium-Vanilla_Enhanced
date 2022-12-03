@@ -1,0 +1,12 @@
+{
+  "name": "Biomes",
+  "icon": "minecraft:oak_sapling",
+  "category": "terralysium_vanilla_enhanced:nature_category",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Minecraft has different Biomes like Forests, Deserts and Tundras. Every Biome is unique and as opportunities for exploration and creation of new Builds."
+    }
+  ]
+}

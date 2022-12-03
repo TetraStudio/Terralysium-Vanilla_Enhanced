@@ -1,0 +1,11 @@
+{
+  "name": "Caramel",
+  "icon": "terralysium_vanilla_enhanced:mango",
+  "category": "terralysium_vanilla_enhanced:ingredients",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Caramel is a form of hardend sugar like candis "
+    }
+  ]
+}

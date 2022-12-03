@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "terralysium_vanilla_enhanced:tanzanite_ore",
+    "terralysium_vanilla_enhanced:tanzanite_block",
+    "terralysium_vanilla_enhanced:deepslate_tanzanite_ore",
+    "terralysium_vanilla_enhanced:yellow_crystal_block",
+    "terralysium_vanilla_enhanced:yellow_crystal"
+  ]
+}

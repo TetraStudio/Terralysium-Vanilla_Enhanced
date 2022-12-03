@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "terralysium_vanilla_enhanced:block/deepslate_tanzanite_ore"
+  }
+}
