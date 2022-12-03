@@ -58,6 +58,17 @@ public class ModBlocks {
                     .strength(4f).requiresTool().nonOpaque()), ModItemGroup.VE_TEST);
 
 
+   // Goldbricks
+   public static final Block GOLDBRICKS = registerBlock("goldbricks",
+           new Block(FabricBlockSettings.of(Material.METAL).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.VE_TEST);
+   // Ironbricks
+   public static final Block IRONBRICKS = registerBlock("ironbricks",
+           new Block(FabricBlockSettings.of(Material.METAL).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.VE_TEST);
+   // Platinumbricks
+   public static final Block PLATINUMBRICKS = registerBlock("platinumbricks",
+           new Block(FabricBlockSettings.of(Material.METAL).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.VE_TEST);
+
+
     private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Terralysium_VE.MOD_ID, name), block);
     }
