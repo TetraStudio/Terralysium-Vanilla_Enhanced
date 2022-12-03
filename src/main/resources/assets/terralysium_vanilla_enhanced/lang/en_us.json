@@ -50,6 +50,10 @@
   "item.terralysium_vanilla_enhanced.orchideaflower": "Orchidea Lotus",
   "item.terralysium_vanilla_enhanced.redfireflower": "Red Fire Lotus ",
 
+  "block.terralysium_vanilla_enhanced.platinumbricks": "Platinumbricks",
+  "block.terralysium_vanilla_enhanced.goldbricks": "goldbricks",
+  "block.terralysium_vanilla_enhanced.ironbricks": "Ironbricks",
+
   "item.terralysium_vanilla_enhanced.world_guide": "World Guide",
   "item.terralysium_vanilla_enhanced.world_guide.landing_text": "A book which will guide you trough this wonderful world"
 }
