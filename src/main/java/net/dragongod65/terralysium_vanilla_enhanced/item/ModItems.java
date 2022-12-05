@@ -82,6 +82,10 @@ public class ModItems {
             new SwordItem(ToolMaterials.DIAMOND, 10, 5f,
                     new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(1)));
 
+    public static final Item DROM = registerItem("drom",
+            new SwordItem(ToolMaterials.DIAMOND, 10, 5f,
+                    new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(1)));
+
     public static final Item LOTUSFLOWER = registerItem("lotusflower",
             new Item(new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(1)));
     public static final Item ORCHIDEAFLOWER = registerItem("orchideaflower",
