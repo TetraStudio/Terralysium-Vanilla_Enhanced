@@ -36,7 +36,15 @@ public class ModItems {
     public static final Item MAGMATIC_BONE = registerItem("magmatic_bone",
             new Item(new FabricItemSettings().group(ModItemGroup.VE_TEST)));
 
-
+    public static final Item LAVENDER_SEEDS = registerItem("lavender",
+            new AliasedBlockItem(ModBlocks.LAVENDER_CROP,
+                    new FabricItemSettings().group(ModItemGroup.VE_TEST)));
+    public static final Item DARK_LAVENDER = registerItem("dark_lavender",
+            new Item(new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(64)));
+    public static final Item NORMAL_LAVENDER = registerItem("normal_lavender",
+            new Item(new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(64)));
+    public static final Item LIGHT_LAVENDER = registerItem("light_lavender",
+            new Item(new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(64)));
 
 
     public static final Item EGGPLANT_SEEDS = registerItem("eggplant_seeds",

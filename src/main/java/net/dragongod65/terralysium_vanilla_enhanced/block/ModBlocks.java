@@ -53,6 +53,9 @@ public class ModBlocks {
     public static final Block EGGPLANT_CROP = registerBlockWithoutItem("eggplant_crop",
             new EggplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
+    public static final Block LAVENDER_CROP = registerBlockWithoutItem("lavender_crop",
+            new EggplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+
     public static final Block GEM_INFUSING_STATION = registerBlock("gem_infusing_station",
             new GemInfusingStationBlock(FabricBlockSettings.of(Material.METAL)
                     .strength(4f).requiresTool().nonOpaque()), ModItemGroup.VE_TEST);

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "terralysium_vanilla_enhanced:block/lavender_bush4"
+  }
+}
