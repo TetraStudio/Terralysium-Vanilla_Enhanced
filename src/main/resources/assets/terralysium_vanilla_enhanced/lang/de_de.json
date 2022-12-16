@@ -1,0 +1,62 @@
+{
+  "item.terralysium_vanilla_enhanced.eight_ball": "Eight Ball",
+
+  "item.terralysium_vanilla_enhanced.kaupensword": "Kaupen Sword",
+  "block.terralysium_vanilla_enhanced.tanzanite_block": "Block of Tanzanite",
+  "block.terralysium_vanilla_enhanced.tanzanite_ore": "Tanzanite Erz",
+  "block.terralysium_vanilla_enhanced.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
+  "block.terralysium_vanilla_enhanced.jumpy_block": "Jumpy Block",
+  "block.terralysium_vanilla_enhanced.tanzanite_lamp": "Tanzanite Lamp",
+
+  "block.terralysium_vanilla_enhanced.gem_infusing_station": "Gem Infusing Station",
+  "entity.minecraft.villager.jumpmaster": "Jump Master",
+  "key.category.terralysium_vanilla_enhanced.tutorial": "Terralysium_VE",
+
+
+  "itemGroup.terralysium_vanilla_enhanced.magmatic_bone": "VE-Test Tab",
+  "itemGroup.terralysium_vanilla_enhanced.decoration": "Decorations and CosmeticsModel Tab probably gets immigrated to another mod",
+
+  "item.terralysium_vanilla_enhanced.magmatic_bone": "Magmatic Bone",
+  "item.terralysium_vanilla_enhanced.strider_milk": "Strider Milk",
+  "item.terralysium_vanilla_enhanced.platinum": "Platin",
+
+  "item.terralysium_vanilla_enhanced.banana": "Banane",
+  "item.terralysium_vanilla_enhanced.corn": "Mais",
+
+  "item.terralysium_vanilla_enhanced.chili": "Chili",
+
+  "item.terralysium_vanilla_enhanced.pineapple": "Ananas",
+
+  "item.terralysium_vanilla_enhanced.peach": "Peach",
+
+  "item.terralysium_vanilla_enhanced.lettuce": "Salat",
+
+  "item.terralysium_vanilla_enhanced.mango": "Mango",
+
+  "item.terralysium_vanilla_enhanced.eggplant": "Aubergine",
+  "item.terralysium_vanilla_enhanced.eggplant_seeds": "Aubergine Samen",
+  "block.terralysium_vanilla_enhanced.eggplant_crop": "Aubergine Crop",
+
+  "item.terralysium_vanilla_enhanced.poisonous_acid_bucket": "Süre Eimer",
+
+  "block.terralysium_vanilla_enhanced.glowing_mushroom": "Leuchtender Pilz",
+
+  "block.terralysium_vanilla_enhanced.yellow_crystal_block": "Glber Kristall Block",
+  "block.terralysium_vanilla_enhanced.yellow_crystal": "Yellow Crystal",
+  "item.terralysium_vanilla_enhanced.yellow_crystal_shard": "Yellow Crystal Shards",
+
+  "block.terralysium_vanilla_enhanced.blue_crystal_block": "Blauer Kristall Block",
+  "block.terralysium_vanilla_enhanced.blue_crystal": "Blauer Kristall",
+  "item.terralysium_vanilla_enhanced.blue_crystal_shard": "Blauer Kristall Shards",
+
+  "item.terralysium_vanilla_enhanced.lotusflower": "Pinker Lotus",
+  "item.terralysium_vanilla_enhanced.orchideaflower": "Orchidea Lotus",
+  "item.terralysium_vanilla_enhanced.redfireflower": "Roter Lotus ",
+
+  "block.terralysium_vanilla_enhanced.platinumbricks": "Platinziegeln",
+  "block.terralysium_vanilla_enhanced.goldbricks": "Goldziegeln",
+  "block.terralysium_vanilla_enhanced.ironbricks": "Eisenziegenl",
+
+  "item.terralysium_vanilla_enhanced.world_guide": "World Guide",
+  "item.terralysium_vanilla_enhanced.world_guide.landing_text": "A book which will guide you trough this wonderful world"
+}

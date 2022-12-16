@@ -1,12 +1,9 @@
 package net.dragongod65.terralysium_vanilla_enhanced.block;
 
+import net.dragongod65.terralysium_vanilla_enhanced.block.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.dragongod65.terralysium_vanilla_enhanced.Terralysium_VE;
-import net.dragongod65.terralysium_vanilla_enhanced.block.custom.EggplantCropBlock;
-import net.dragongod65.terralysium_vanilla_enhanced.block.custom.GemInfusingStationBlock;
-import net.dragongod65.terralysium_vanilla_enhanced.block.custom.JumpyBlock;
-import net.dragongod65.terralysium_vanilla_enhanced.block.custom.TanzaniteLampBlock;
 import net.dragongod65.terralysium_vanilla_enhanced.item.ModItemGroup;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffect;
@@ -18,6 +15,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
+
+import static net.minecraft.sound.BlockSoundGroup.SAND;
 
 public class ModBlocks {
 
@@ -37,11 +36,11 @@ public class ModBlocks {
 
     public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
             new JumpyBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block GOLDEN_SAND = registerBlock("golden_sand",
+            new SpeedyBlocks(FabricBlockSettings.of(Material.SOIL).sounds(SAND).strength(1).requiresTool()), ModItemGroup.VE_TEST);
 
     public static final Block YELLOW_CRYSTAL_BLOCK = registerBlock("yellow_crystal_block",
             new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)), ModItemGroup.VE_TEST);
-
-
     public static final Block YELLOW_CRYSTAL = registerBlock("yellow_crystal",
             new Block( FabricBlockSettings.copy(Blocks.AMETHYST_CLUSTER).nonOpaque().requiresTool()), ModItemGroup.VE_TEST);
 
