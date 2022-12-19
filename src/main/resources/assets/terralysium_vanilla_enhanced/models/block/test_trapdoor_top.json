@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "terralysium_vanilla_enhanced:block/test_trapdoor"
+  }
+}

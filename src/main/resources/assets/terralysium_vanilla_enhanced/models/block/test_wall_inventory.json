@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "terralysium_vanilla_enhanced:block/test_texture"
+  }
+}

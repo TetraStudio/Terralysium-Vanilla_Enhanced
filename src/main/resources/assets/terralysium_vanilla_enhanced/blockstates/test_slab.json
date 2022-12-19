@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "terralysium_vanilla_enhanced:block/test_slab"
+    },
+    "type=double": {
+      "model": "terralysium_vanilla_enhanced:block/test_block"
+    },
+    "type=top": {
+      "model": "terralysium_vanilla_enhanced:block/test_slab_top"
+    }
+  }
+}

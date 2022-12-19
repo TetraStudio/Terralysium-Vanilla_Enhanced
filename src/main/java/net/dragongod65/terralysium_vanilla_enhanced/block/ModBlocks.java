@@ -16,9 +16,43 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 
+import static net.minecraft.sound.BlockSoundGroup.LADDER;
 import static net.minecraft.sound.BlockSoundGroup.SAND;
 
 public class ModBlocks {
+
+    //Test Blocks
+    public static final Block TEST_BUTTON_1 = registerBlock("test_button_1",
+            new ModWoodenButtonBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).sounds(LADDER).strength(1).requiresTool().noCollision()), ModItemGroup.VE_TEST);
+    public static final Block TEST_BUTTON_2 = registerBlock("test_button_2",
+            new ModStoneButtonBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).sounds(LADDER).strength(1).requiresTool().noCollision()), ModItemGroup.VE_TEST);
+    public static final Block TEST_PRESSURE_PLATE = registerBlock("test_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.REDSTONE_LAMP)
+                    .sounds(LADDER).strength(1).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block TEST_DOOR = registerBlock("test_door",
+            new ModDoorBlock(FabricBlockSettings.of(Material.WOOD)
+                    .sounds(LADDER).strength(1).requiresTool().nonOpaque()), ModItemGroup.VE_TEST);
+    public static final Block TEST_TRAPDOOR = registerBlock("test_trapdoor",
+            new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD)
+                    .sounds(LADDER).strength(1).requiresTool().nonOpaque()), ModItemGroup.VE_TEST);
+    public static final Block TEST_STAIRS = registerBlock("test_stairs",
+            new ModStairsBlock(ModBlocks.TEST_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.REDSTONE_LAMP)
+                    .sounds(LADDER).strength(1).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block TEST_FENCE = registerBlock("test_fence",
+            new FenceBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).sounds(LADDER).strength(1).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block TEST_FENCE_GATE = registerBlock("test_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).sounds(LADDER).strength(1).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block TEST_WALL = registerBlock("test_wall",
+            new WallBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).sounds(LADDER).strength(1).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block TEST_SLAB = registerBlock("test_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP)
+                    .sounds(LADDER).strength(1).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block TEST_BLOCK = registerBlock("test_block",
+            new Block(FabricBlockSettings.of(Material.REDSTONE_LAMP).sounds(LADDER).strength(5).requiresTool()), ModItemGroup.VE_TEST);
+
+
+
+
 
     public static final Block MAGMATIC_BONE_BLOCK = registerBlock("magmatic_boneblock",
             new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).strength(2f).requiresTool()), ModItemGroup.VE_TEST);

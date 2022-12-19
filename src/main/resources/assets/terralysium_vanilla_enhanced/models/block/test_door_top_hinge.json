@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "terralysium_vanilla_enhanced:block/test_door_top",
+    "bottom": "terralysium_vanilla_enhanced:block/test_door_bottom"
+  }
+}

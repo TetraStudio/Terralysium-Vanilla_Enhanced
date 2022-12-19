@@ -1,4 +1,16 @@
 {
+  "block.terralysium_vanilla_enhanced.test_button_1": "WoodenTestButton",
+  "block.terralysium_vanilla_enhanced.test_button_2": "StoneTestButton",
+  "block.terralysium_vanilla_enhanced.test_fence": "TestFence",
+  "block.terralysium_vanilla_enhanced.test_fence_gate": "TestFenceGate",
+  "block.terralysium_vanilla_enhanced.test_slab": "TestSlab",
+  "block.terralysium_vanilla_enhanced.test_stairs": "TestStairs",
+  "block.terralysium_vanilla_enhanced.test_door": "TestDoor",
+  "block.terralysium_vanilla_enhanced.test_trapdoor": "TestTrapdoor",
+  "block.terralysium_vanilla_enhanced.test_wall": "TestWall",
+  "block.terralysium_vanilla_enhanced.test_block": "TestBlock",
+
+
   "item.terralysium_vanilla_enhanced.eight_ball": "Eight Ball",
 
   "item.terralysium_vanilla_enhanced.kaupensword": "Kaupen Sword",
