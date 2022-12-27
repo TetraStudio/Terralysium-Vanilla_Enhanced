@@ -36,7 +36,7 @@ public class ModBlocks {
             new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD)
                     .sounds(LADDER).strength(1).requiresTool().nonOpaque()), ModItemGroup.VE_TEST);
     public static final Block TEST_STAIRS = registerBlock("test_stairs",
-            new ModStairsBlock(ModBlocks.TEST_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.REDSTONE_LAMP)
+            new ModStairsBlock(Blocks.OAK_STAIRS.getDefaultState(), FabricBlockSettings.of(Material.REDSTONE_LAMP)
                     .sounds(LADDER).strength(1).requiresTool()), ModItemGroup.VE_TEST);
     public static final Block TEST_FENCE = registerBlock("test_fence",
             new FenceBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).sounds(LADDER).strength(1).requiresTool()), ModItemGroup.VE_TEST);
