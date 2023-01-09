@@ -71,5 +71,11 @@
   "block.terralysium_vanilla_enhanced.ironbricks": "Ironbricks",
 
   "item.terralysium_vanilla_enhanced.world_guide": "World Guide",
-  "item.terralysium_vanilla_enhanced.world_guide.landing_text": "A book which will guide you trough this wonderful world"
+  "item.terralysium_vanilla_enhanced.world_guide.landing_text": "A book which will guide you trough this wonderful world",
+
+
+
+
+  "advancements.discover.plenty_enough_biomes.title": "Plenty Enough Biomes you have found",
+  "advancements.discover.plenty_enough_biomes.description": "Visit all new Terralysium Biomes"
 }
