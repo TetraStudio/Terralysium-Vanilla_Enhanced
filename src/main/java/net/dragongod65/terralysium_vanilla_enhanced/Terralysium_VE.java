@@ -15,6 +15,7 @@ import net.dragongod65.terralysium_vanilla_enhanced.villager.ModVillagers;
 import net.dragongod65.terralysium_vanilla_enhanced.world.feature.ModConfiguredFeatures;
 import net.dragongod65.terralysium_vanilla_enhanced.world.gen.ModOreGeneration;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +28,7 @@ public class Terralysium_VE implements ModInitializer {
 	public void onInitialize() {
 		ModConfiguredFeatures.registerConfiguredFeatures();
 		reigisterFlammableBlocks();
+		registerStrippable();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
@@ -66,7 +68,11 @@ public class Terralysium_VE implements ModInitializer {
 		instance.add(ModBlocks.PALM_WOOD_SLAB,5,20);
 		instance.add(ModBlocks.PALM_WOOD_STAIRS,5,20);
 		instance.add(ModBlocks.PALM_WOOD_TRAPDOOR,5,20);
+	}
 
+	public static void registerStrippable() {
+		StrippableBlockRegistry.register(ModBlocks.PALM_LOG, ModBlocks.STRIPPED_PALM_LOG);
+		StrippableBlockRegistry.register(ModBlocks.PALM_WOOD, ModBlocks.STRIPPED_PALM_WOOD);
 
 
 	}
