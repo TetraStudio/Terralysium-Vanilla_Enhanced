@@ -16,8 +16,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 
-import static net.minecraft.sound.BlockSoundGroup.LADDER;
-import static net.minecraft.sound.BlockSoundGroup.SAND;
+import static net.minecraft.sound.BlockSoundGroup.*;
 
 public class ModBlocks {
 
@@ -51,6 +50,40 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.REDSTONE_LAMP).sounds(LADDER).strength(5).requiresTool()), ModItemGroup.VE_TEST);
 
 
+    //Complete Palm Wood Set
+    public static final Block PALM_LOG = registerBlock("palm_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block PALM_WOOD = registerBlock("palm_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block PALM_WOOD_PLANKS = registerBlock("palm_wood_planks",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block PALM_WOOD_BUTTON = registerBlock("palm_wood_button",
+            new ModWoodenButtonBlock(FabricBlockSettings.of(Material.WOOD).sounds(WOOD).strength(4.0f).requiresTool().noCollision()), ModItemGroup.VE_TEST);
+    public static final Block PALM_WOOD_PRESSURE_PLATE = registerBlock("palm_wood_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.REDSTONE_LAMP)
+                    .sounds(WOOD).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block PALM_WOOD_DOOR = registerBlock("palm_wood_door",
+            new ModDoorBlock(FabricBlockSettings.of(Material.WOOD)
+                    .sounds(WOOD).strength(4.0f).requiresTool().nonOpaque()), ModItemGroup.VE_TEST);
+    public static final Block PALM_WOOD_TRAPDOOR = registerBlock("palm_wood_trapdoor",
+            new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD)
+                    .sounds(WOOD).strength(4.0f).requiresTool().nonOpaque()), ModItemGroup.VE_TEST);
+    public static final Block PALM_WOOD_STAIRS = registerBlock("palm_wood_stairs",
+            new ModStairsBlock(ModBlocks.PALM_WOOD_PLANKS.getDefaultState(), FabricBlockSettings.of(Material.WOOD)
+                    .sounds(WOOD).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block PALM_WOOD_FENCE = registerBlock("palm_wood_fence",
+            new FenceBlock(FabricBlockSettings.of(Material.WOOD).sounds(WOOD).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block PALM_WOOD_FENCE_GATE = registerBlock("palm_wood_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).sounds(WOOD).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+    public static final Block PALM_WOOD_SLAB = registerBlock("palm_wood_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.WOOD)
+                    .sounds(WOOD).strength(1).requiresTool()), ModItemGroup.VE_TEST);
+
+
 
 
 
@@ -60,6 +93,7 @@ public class ModBlocks {
     public static final Block TANZANITE_ORE = registerBlock("tanzanite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModItemGroup.VE_TEST);
+
     public static final Block DEEPSLATE_TANZANITE_ORE = registerBlock("deepslate_tanzanite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModItemGroup.VE_TEST);
@@ -87,7 +121,7 @@ public class ModBlocks {
             new EggplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
     public static final Block LAVENDER_CROP = registerBlockWithoutItem("lavender_crop",
-            new EggplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+            new NormalLavenderBushCrop(FabricBlockSettings.copy(Blocks.WHEAT)));
 
     public static final Block GEM_INFUSING_STATION = registerBlock("gem_infusing_station",
             new GemInfusingStationBlock(FabricBlockSettings.of(Material.METAL)

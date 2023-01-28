@@ -14,7 +14,7 @@
   },
 
   "license": "MIT License",
-  "icon": "poisonus_acid_bucket.png",
+  "icon": "icon.png",
 
   "environment": "*",
   "entrypoints": {
