@@ -1,6 +1,7 @@
 package net.dragongod65.terralysium_vanilla_enhanced.block;
 
 import net.dragongod65.terralysium_vanilla_enhanced.block.custom.*;
+import net.dragongod65.terralysium_vanilla_enhanced.world.feature.tree.PalmSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.dragongod65.terralysium_vanilla_enhanced.Terralysium_VE;
@@ -52,15 +53,22 @@ public class ModBlocks {
 
     //Complete Palm Wood Set
     public static final Block PALM_LOG = registerBlock("palm_log",
-            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.VE_TEST);
     public static final Block STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
-            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD)), ModItemGroup.VE_TEST);
     public static final Block PALM_WOOD = registerBlock("palm_wood",
-            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG)), ModItemGroup.VE_TEST);
     public static final Block STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
-            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD)), ModItemGroup.VE_TEST);
+
+    public static final Block PALM_LEAVES = registerBlock("palm_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroup.VE_TEST);
+
     public static final Block PALM_WOOD_PLANKS = registerBlock("palm_wood_planks",
-            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()), ModItemGroup.VE_TEST);
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)), ModItemGroup.VE_TEST);
+    public static final Block PALM_SAPLING = registerBlock("palm_sapling",
+            new SaplingBlock(new PalmSaplingGenerator(),FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.VE_TEST);
+
     public static final Block PALM_WOOD_BUTTON = registerBlock("palm_wood_button",
             new ModWoodenButtonBlock(FabricBlockSettings.of(Material.WOOD).sounds(WOOD).strength(4.0f).requiresTool().noCollision()), ModItemGroup.VE_TEST);
     public static final Block PALM_WOOD_PRESSURE_PLATE = registerBlock("palm_wood_pressure_plate",

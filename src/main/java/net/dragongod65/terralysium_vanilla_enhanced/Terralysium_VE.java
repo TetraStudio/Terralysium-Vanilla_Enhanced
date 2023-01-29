@@ -1,7 +1,9 @@
 package net.dragongod65.terralysium_vanilla_enhanced;
 
+import net.dragongod65.terralysium_vanilla_enhanced.util.BlockFeatures;
+import net.dragongod65.terralysium_vanilla_enhanced.world.gen.NewerWorldGeneration;
+import net.dragongod65.terralysium_vanilla_enhanced.world.gen.TreeGeneration;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.dragongod65.terralysium_vanilla_enhanced.block.ModBlocks;
 import net.dragongod65.terralysium_vanilla_enhanced.block.entity.ModBlockEntities;
 import net.dragongod65.terralysium_vanilla_enhanced.fluid.ModFluids;
@@ -14,7 +16,6 @@ import net.dragongod65.terralysium_vanilla_enhanced.util.ModLootTableModifiers;
 import net.dragongod65.terralysium_vanilla_enhanced.villager.ModVillagers;
 import net.dragongod65.terralysium_vanilla_enhanced.world.feature.ModConfiguredFeatures;
 import net.dragongod65.terralysium_vanilla_enhanced.world.gen.ModOreGeneration;
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,8 +28,9 @@ public class Terralysium_VE implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModConfiguredFeatures.registerConfiguredFeatures();
-		reigisterFlammableBlocks();
-		registerStrippable();
+
+		BlockFeatures.reigisterFlammableBlocks();
+		BlockFeatures.registerStrippable();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
@@ -37,7 +39,7 @@ public class Terralysium_VE implements ModInitializer {
 		ModVillagers.registerTrades();
 
 		ModPaintings.registerPaintings();
-		ModOreGeneration.generateOres();
+		NewerWorldGeneration.generateWorldGen();
 
 		ModLootTableModifiers.modifyLootTables();
 		ModMessages.registerC2SPackets();
@@ -51,29 +53,4 @@ public class Terralysium_VE implements ModInitializer {
 
 	}
 
-	//To own RegisterClass
-	public static void reigisterFlammableBlocks() {
-		FlammableBlockRegistry instance = FlammableBlockRegistry.getDefaultInstance();
-
-		instance.add(ModBlocks.PALM_LOG,5,5);
-		instance.add(ModBlocks.PALM_WOOD,5,5);
-		instance.add(ModBlocks.STRIPPED_PALM_LOG,5,5);
-		instance.add(ModBlocks.STRIPPED_PALM_WOOD,5,5);
-		instance.add(ModBlocks.PALM_WOOD_BUTTON,5,20);
-		instance.add(ModBlocks.PALM_WOOD_DOOR,5,20);
-		instance.add(ModBlocks.PALM_WOOD_FENCE,5,20);
-		instance.add(ModBlocks.PALM_WOOD_FENCE_GATE,5,20);
-		instance.add(ModBlocks.PALM_WOOD_PLANKS,5,20);
-		instance.add(ModBlocks.PALM_WOOD_PRESSURE_PLATE,5,20);
-		instance.add(ModBlocks.PALM_WOOD_SLAB,5,20);
-		instance.add(ModBlocks.PALM_WOOD_STAIRS,5,20);
-		instance.add(ModBlocks.PALM_WOOD_TRAPDOOR,5,20);
-	}
-
-	public static void registerStrippable() {
-		StrippableBlockRegistry.register(ModBlocks.PALM_LOG, ModBlocks.STRIPPED_PALM_LOG);
-		StrippableBlockRegistry.register(ModBlocks.PALM_WOOD, ModBlocks.STRIPPED_PALM_WOOD);
-
-
-	}
 }

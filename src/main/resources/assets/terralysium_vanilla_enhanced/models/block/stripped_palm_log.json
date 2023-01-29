@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "terralysium_vanilla_enhanced:block/stripped_palm_log_top",
+    "side": "terralysium_vanilla_enhanced:block/stripped_palm_log"
+  }
+}
