@@ -1,5 +1,6 @@
 package net.dragongod65.terralysium_vanilla_enhanced.item;
 
+import net.dragongod65.terralysium_vanilla_enhanced.item.custom.BetterHoeItem;
 import net.dragongod65.terralysium_vanilla_enhanced.item.custom.ScrollofReturning;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.dragongod65.terralysium_vanilla_enhanced.Terralysium_VE;
@@ -9,8 +10,31 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
+    //New Platinum Metal | Todo: Add MetalItems, Other Tools, Blocks
     public static final Item PLATINUM = registerItem("platinum",
             new Item(new FabricItemSettings().group(ModItemGroup.VE_TEST)));
+    public static final Item PLATINUM_INGOT = registerItem("platinum_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.VE_TEST)));
+    public static final Item PLATINUM_NUGGET = registerItem("platinum_nugget",
+            new Item(new FabricItemSettings().group(ModItemGroup.VE_TEST)));
+
+    public static final Item PLATINUM_SWORD = registerItem("platinum_sword",
+            new SwordItem(ModToolMaterials.PLATINUM, 10, 1.7f,
+                    new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(1)));
+    public static final Item PLATINUM_PICKAXE = registerItem("platinum_pickaxe",
+            new PickaxeItem(ModToolMaterials.PLATINUM, 4, 2f,
+                    new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(1)));
+    public static final Item PLATINUM_AXE = registerItem("platinum_axe",
+            new AxeItem(ModToolMaterials.PLATINUM, 12, 2f,
+                    new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(1)));
+    public static final Item PLATINUM_SHOVEL = registerItem("platinum_shovel",
+            new ShovelItem(ModToolMaterials.PLATINUM, 4, 2f,
+                    new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(1)));
+    public static final Item PLATINUM_HOE = registerItem("platinum_hoe",
+            new BetterHoeItem(ModToolMaterials.PLATINUM, 4, 2f,
+                    new FabricItemSettings().group(ModItemGroup.VE_TEST).maxCount(1)));
+
+
 
 
     public static final Item SCROLL_OF_RETURNING = registerItem("scroll_of_returning",
