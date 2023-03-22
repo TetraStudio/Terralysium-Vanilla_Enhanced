@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "###",
+    "AAA"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:brick"
+    },
+    "A": {
+      "item": "terralysium_vanilla_enhanced:platinum_ingot"
+    }
+  },
+  "result": {
+    "item": "terralysium_vanilla_enhanced:platinumbricks"
+  }
+}
